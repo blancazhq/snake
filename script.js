@@ -135,7 +135,9 @@ function init() {
       }
     };
     var action = dict[e.keyCode];
-    action();
+    if (action) {
+      action();
+    }
     return false;
   });
 }
